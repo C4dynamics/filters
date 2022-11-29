@@ -1,4 +1,4 @@
-dontsync/
-kalman/fig
-kalman/dontsync/
-
+dontsync/datfil.txt
+dontsync/zarchan.m
+ex_kalman/dontsync/
+ex_kalman/fig/
