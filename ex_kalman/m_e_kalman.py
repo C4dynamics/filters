@@ -1,6 +1,6 @@
 import numpy as np
 
-class e_kalman:
+class c_e_kalman:
   """ 
   extended kalman filter 
   zarchan 374 

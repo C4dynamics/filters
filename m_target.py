@@ -1,9 +1,9 @@
 # import math 
-from m_params import params
+from m_params import c_params
 import numpy as np
 from builtins import object
 
-class target(object):
+class c_target(object):
     """ 
         data point 
         vertically falling target
@@ -34,7 +34,7 @@ class target(object):
             vzT = y[:, 1]
             
         dzT = vzT
-        dvzT = .0034 * np.exp(-zT.astype('float') / 22000 / params.ft2m) * params.g * vzT**2 / 2 / tgt.beta - params.g
+        dvzT = .0034 * np.exp(-zT.astype('float') / 22000 / c_params.ft2m) * c_params.g * vzT**2 / 2 / tgt.beta - c_params.g
             
         return dzT, dvzT
 

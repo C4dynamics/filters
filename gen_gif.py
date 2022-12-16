@@ -1,10 +1,11 @@
 import os
 import imageio
+import natsort
 
 def gen_gif(dirname):
     images = []
-    dirfiles = sorted(os.listdir(dirname)) # 'frames/'
-    dirfiles.sort(key = lambda f: int(''.join(filter(str.isdigit, f))))
+    dirfiles = natsort.natsorted(os.listdir(dirname)) # 'frames/'
+    # dirfiles.sort(key = lambda f: int(''.join(filter(str.isdigit, f))))
     # dirfiles = [f for f in listdir(dirname) if isfile(join(dirname, f))]
     for filename in dirfiles:
         # print(filename)
