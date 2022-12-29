@@ -1,6 +1,6 @@
 import numpy as np
 
-class c_e_kalman:
+class e_kalman:
   """ 
   extended kalman filter 
   zarchan 374 
@@ -57,7 +57,7 @@ class c_e_kalman:
     return obj.x
  
  
-  def correct(obj, f, y_in): 
+  def update(obj, f, y_in): 
     '''
     computes the posterior mean x and covariance P of the state given new measurement y.
     corrects x and P given the predicted x and P matrices, measurement vector y, the measurement 

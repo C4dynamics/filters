@@ -1,6 +1,6 @@
 import numpy as np
 
-class c_luenberger:
+class luenberger:
   """ 
   luenberger estimator 
   agranovich, 
